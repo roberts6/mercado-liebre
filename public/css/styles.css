@@ -179,36 +179,72 @@ footer div .anuncio{
 /* TABLET */
 @media (min-width: 361px){
     
-    a div .burger-menu{
-        display: none;
-    }
-
-    .descripciones{
-        display: flex;
-    }
     .burger-menu{
         display: none;
     }
 
-    .main-options ul li{
+    .main-navbar{
         display: flex;
         flex-wrap: wrap;
-        flex-direction: row;
+        justify-content: space-between;
+        padding: 0;
+        margin: 5px;
     }
+
+    .main-navbar .logo{
+        max-width: 40%;
+    }
+
+    .main-navbar .busqueda{
+        max-width: 30%;
+        height: 10%;
+    }
+
+    .main-navbar .copy-header{
+        max-width: 30%;
+    }
+   
+
+    .descripciones{
+        display: flex;
+    }
+
+.main-options{
+    display: flex;
+    justify-content: flex-start;
+}
+
+    .main-options ul li{
+        border: 1px solid violet;
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 70%;
+    }
+
+    .main-options ul{
+        display: flex;
+        justify-content: space-between;
+       }
+
+   .main-options li{
+    display: flex;
+    margin: 0 5px;
+   }
+
 
     .ultima-vista, .ofertas{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
-    flex-grow: 0.5;
+    flex-grow: 0.25;
 }
 
 .titulares{
     max-width: 240px;
 }
 
-div img{
+img{
     box-shadow: 0px​ ​0px​ ​10px​ ​rgb​(​100​, ​100​, ​100​);
 }
 
@@ -221,5 +257,5 @@ div img{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        flex-grow: 0.20;
+        flex-grow: 0.10;
 }

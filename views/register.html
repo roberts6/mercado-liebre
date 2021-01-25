@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <link rel="stylesheet" href="/static/css/registro.css">
+<title>Registro</title>
+</head>
+<body>
+    <div class="nombreyapellido">
+        <label for="nombreyapellido">Nombre y Apellido</label>
+        <input type="text" name="nombreyapellido" placeholder="Escribe tu nombre/s y apellido/s">
+    </div>
+
+    <div class="usuario">
+            <label for="usuario">Nombre de usuario</label>
+            <input type="text" name="usuario" placeholder="Escribe tu nombre de usuari@">
+        </div>
+
+        <div class="fechadenacimiento">
+                <label for="fechadenacimiento">Fecha de nacimiento</label>
+                <input type="date" name="fechadenacimiento">
+            </div>
+
+            <div class="Domicilio">
+                    <label for="Domicilio">Dirección</label>
+                    <input type="text" name="Domicilio" placeholder="Escribe tu direccion">
+                </div>
+
+                <div class="tipousuario">
+                        <label for="tipousuario">Vendés o comprás?</label> <br>
+                        <input type="radio" name="tipousuario" value="vendedor"> vendedor
+                        <br>
+                        <input type="radio" name="tipousuario" value="comprador"> comprador
+                    </div>
+
+                    <div class="categorias">
+                            <label for="categorias">Categorías</label>
+                            <select name="categorias" id="categorias">
+                            <option value="Electro" selected>Electro</option>
+                            <option value="Moda">Moda</option>
+                            <option value="Hogar">Hogar</option>
+                            <option value="Jugueteria">Juguetería</option>
+                            <option value="VidaSana">Vida Sana</option>
+                        </select>
+                        </div>
+
+                        <div class="foto">
+                                <label for="foto">Sube tu Foto</label>
+                                <input type="file" name="foto">
+                            </div>
+                            
+                            <div class="contraseña">
+                                    <label for="contraseña">Escribe tu contraseña</label>
+                                    <input type="password" name="contraseña">
+                                        <label for="contraseña">Confirmar contraseña</label>
+                                        <input type="password" name="contraseña">
+                                    </div>
+
+                                    <a href="/">Volver a la home</a>
+
+                                    <form action=""></form>
+
+                                    <form action="/" method="post">
+                                    <input type="button" value="home">
+                                    </form>
+
+                            
+</body>
+</html>
