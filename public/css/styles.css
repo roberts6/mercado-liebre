@@ -150,9 +150,10 @@ input {
 
 .descripciones{
     display: none;
+    transition: display .5s;
 }
 
-.producto .fas{
+.producto i{
         display: ​block​;    
         font-size: 16px;   
         padding: 5px;    
@@ -204,6 +205,7 @@ footer div{
 footer div i{
     color: #1259c3;
     font-size: 40px;
+    transition: font-size .5s;
 }
 
 footer div .anuncio{
@@ -233,6 +235,7 @@ footer div .anuncio{
 
     .main-navbar .busqueda{
         width: 30vw;
+        height: 3.5vw;
     }
 
     .main-navbar .copy-header{
@@ -242,11 +245,9 @@ footer div .anuncio{
    
 
     .descripciones{
-        display: flex;
         justify-content: center;
         margin-top: 10px;
     }
-
 
     .producto:hover .descripciones{
         display: flex;
@@ -255,7 +256,7 @@ footer div .anuncio{
 .main-options{
     display: flex;
     justify-content: space-between;
-    font-size: 3.2vw;
+    font-size: 2.7vw;
     margin: 10px 0;
 }
 
@@ -292,6 +293,15 @@ footer div .anuncio{
 img{
     box-shadow: 0px​ ​0px​ ​10px​ ​rgb​(​100​, ​100​, ​100​);
 }
+
+.producto:hover i{
+    font-size: 55px;
+}
+
+.info:hover i{
+    font-size: 55px;
+}
+
 
 }
 
