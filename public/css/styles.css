@@ -260,6 +260,7 @@ footer div .anuncio{
 
 .producto{
     width: 40vw;
+    height: 58vw;
 }
 
     .producto:hover .descripciones{
@@ -352,6 +353,7 @@ li:hover{
     background-color: #fff;
     text-align: center;
     width: 20vw;
+    height: 35vh;
 }
 
 
