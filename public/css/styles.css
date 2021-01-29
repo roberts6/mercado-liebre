@@ -39,6 +39,11 @@ main {
     text-align: right;
 }
 
+/* en esta línea corro 15px a la derecha el texto dentro del input (en este caso barra de búsqueda)*/
+input{
+    text-indent: 15px;
+}
+
 .main-navbar .logo{
     width: 40vw;
 }
@@ -65,16 +70,22 @@ input {
     padding: 20px;
 }
 
+
 .main-options ul li {
     list-style: none;
     display: none;
 }
 
-.main-options ul li a{
+.main-options a{
     text-decoration: none;
     color: black;
     margin: 0;
     padding: 0;
+    transition: text-decoration .5s;
+}
+
+.main-options a{
+    font-size: 80%;
 }
 
 .burger-menu{
@@ -118,7 +129,7 @@ input {
     padding: 15px 0;
     background-color: #fff;
     text-align: center;
-    width: 40%;
+    width: 100%;
 }
 
 .producto img{
@@ -159,13 +170,10 @@ input {
         padding: 5px;    
         width: 30px;    
         height: 30px;       
-        background-color: ​#FFF;   
-        border-radius: 50%;
+        background-color: ​#FFF; 
         position: ​absolute​;    
         right: 20px;    
         top: -15px;
-        color: #39b54a; 
-        border: ​1px​​ solid​​ #39b54a; 
 }
 
 
@@ -192,10 +200,11 @@ footer{
     align-content: center;
     text-align: center;
     width: 90%;
+    margin: auto;
 }
 
 footer div{
-    width: 30vw;
+    width: 100%;
     text-align: center;
     padding: 20px;
     margin: auto;
@@ -249,6 +258,10 @@ footer div .anuncio{
         margin-top: 10px;
     }
 
+.producto{
+    width: 40vw;
+}
+
     .producto:hover .descripciones{
         display: flex;
     }
@@ -257,7 +270,7 @@ footer div .anuncio{
     display: flex;
     justify-content: space-between;
     font-size: 2.7vw;
-    margin: 10px 0;
+    margin: 10px 25px;
 }
 
     .main-options ul li{
@@ -266,6 +279,7 @@ footer div .anuncio{
         font-size: 80%;
         justify-content: space-between;
     }
+
 
     .main-options ul{
         display: flex;
@@ -290,19 +304,26 @@ footer div .anuncio{
     width: 50vw;
 }
 
-img{
-    box-shadow: 0px​ ​0px​ ​10px​ ​rgb​(​100​, ​100​, ​100​);
+
+/* efectos */
+.producto:hover i{
+    font-size: 30px;
+    color: #39b54a;
+    border: ​1px​​ solid​​ #39b54a;   
+    border-radius: 50%;
 }
 
-.producto:hover i{
-    font-size: 55px;
+.producto:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
 
 .info:hover i{
     font-size: 55px;
 }
 
-
+li:hover{
+    text-decoration: underline;
+}
 }
 
 
@@ -322,11 +343,7 @@ img{
 }
 
 .ultima-vista, .ofertas {
-    display: flex;
     flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-grow: 0.25;
 }
 
 .producto {
@@ -339,9 +356,19 @@ img{
 
 
 footer {
+    display: flex;
     margin: auto;
     flex-direction: row;
 }
 
+.info{
+    width: 30%;
 }
+
+.copyright{
+   margin: 40px auto;
+}
+
+}
+
 

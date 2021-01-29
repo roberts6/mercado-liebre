@@ -1,7 +1,221 @@
 body{
-    background-color: #00cec9;
+    background-color: #EAC926;
+    display: flex;
+    flex-flow: wrap;
+    flex-direction: column;
+    justify-content: center;
+    margin: 15px;
+    padding: 15px;
 } 
 
-.usuario{
+header{
+    background-color: #EAC926;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
+main {
+    background-color: #ebebeb;
+    width: 90%;
+    margin:auto;
+    padding: 10px;
+}
+
+.copy-header{
+    text-align: right;
+}
+
+/* en esta línea corro 15px a la derecha el texto dentro del input (en este caso barra de búsqueda)*/
+.busqueda-login input{
+    text-indent: 15px;
+}
+
+.main-navbar .logo{
+    width: 30%;
+}
+
+.main-navbar .busqueda-login{
+    width: 25%;
+}
+
+.main-navbar img,
+input {
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-navbar h2{
+    font-size: 105%;
+    margin-top: 10px;
+    width: 30%;
+}
+
+.main-navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+
+.main-options ul li {
+    list-style: none;
+    display: none;
+}
+
+.main-options a{
+    text-decoration: none;
+    color: black;
+    margin: 0;
+    padding: 0;
+    transition: text-decoration .5s;
+}
+
+.main-options a{
+    font-size: 80%;
+}
+
+.burger-menu{
+    padding: 10px;
+    background-color:#1259c3;;
+    margin: 10px auto;
+    color: white;
+    display: none;
+    text-align: center;
+    max-width: 50px;
+    align-content: center;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.volver{
+    width: 10%;
+}
+
+.comentarios:hover textarea{
+    background-color: orange;
+}
+
+input, textarea{
+    text-indent: 40px;
+    width: 50%;
+    margin: auto;
+}
+
+.checkbox,
+.email,
+.comentarios,
+.enlace,
+.volver{
+    display: none;
+}
+
+input:focus{
+    border-color: #1259c3;
+}
+
+.formulario{
+    background-color: #ebebeb;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 20px;
+
+}
+
+.formulario 
+.nombreyapellido,
+.usuario,
+.fechadenacimiento,
+.Domicilio,
+.categorias,
+.foto,
+.password,
+label input{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    width: 60%;
+    padding: 15px;
+    margin: auto;
+}
+
+.tipousuario{
+    display: flex;
+    /* justify-content: space-between; */
+    width: 40%;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.foto{
+    display: flex;
+    justify-content: space-between;
+    width: 67%;
+    margin: auto;
+}
+
+label{
+    font-size: 20px;
+    margin: 5px 0px;
+}
+
+.categorias select{
+    width: 30%;
+    margin: auto;
+}
+
+.acciones{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin: auto;
+}
+
+
+.enviar{
+    background-color: #55efc4;
+    margin: 0px 15px;
+    padding: 5px; 
+    text-align: center;
+    border-radius: 10%;
+}
+
+.borrar{
+    background-color: #d63031;
+    margin: 0px 15px;
+    padding: 5px; 
+    text-align: center;
+    border-radius: 10%;
+}
+
+.volver-atrás{
+    background-color:#1259c3;
+    margin: 0px 15px;
+    padding: 5px; 
+    text-align: center;
+    border-radius: 10%;
+}
+
+.banner{
+    width: 100%;
+    margin: 0;
+}
+
+.enviar-login{
+    margin: 15px;
+    padding: 15px;
+}
+
+.registro-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 50px;
 }

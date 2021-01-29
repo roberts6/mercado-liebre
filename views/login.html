@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LogIn</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+<link rel="stylesheet" href="/static/css/normalize.css">    
+<link rel="stylesheet" href="/static/css/registro.css">
+</head>
+
+<body>
+        <header>
+    
+                <div class="main-navbar">
+                    <img class="logo" src="/static/images/logo-mercado-liebre.svg" alt="aquí va el logo">
+                    <input class="busqueda-login" type="search" placeholder="Buscar productos, marcas">
+                    <h2 class="copy-header"><i class="fas fa-hand-holding-usd">Comprá en cuotas y sin tarjeta de crédito</i></h2>
+                </div>
+                    
+                <nav class="main-options">
+                        <ul class="opciones-izquierda">
+                            <li><a href="#">ofertas</a></li>
+                            <li><a href="#">tiendas oficiales</a></li>
+                            <li><a href="#">vender</a></li>
+                            <li><a href="#">ayuda</a></li>
+                        </ul>
+                
+                        <ul class="opciones-derecha">
+                                <li><a href="/registro"><i class="far fa-id-card"> Creá tu cuenta</i></a></li>
+                                <li><a href="/login"><i class="fas fa-sign-in-alt"> Ingresá</i></a></li>
+                                <li><a href="#"><i class="fas fa-shopping-basket"> Mis compras</i></a></li>
+                        </ul>  
+                    
+                </nav>
+                
+                <a href="#"><div class="burger-menu">
+                        <i class="fas fa-bars"></i>
+                 </div></a>
+                
+                 <img class= "banner" src="/static/images/img-home-banner.jpg" alt="">
+                    </header>
+
+    <form class="registro-login" action="/" method="GET">
+   <div class="nombreYapellido">
+    <label for="nombreYapellido" placeholder="Jhon Doe">Escribe tu nombre y apellido</label>
+        <input type="text" name="nombreYapellido" id="nombreYapellido">
+   </div>
+   <div class="contraseña">
+     <label for="contraseña">Escribe tu contraseña</label>
+     <input type="password" name="password" id="password" minlength="8" placeholder="minimo 8 caracteres" required>
+   </div>
+   <br>
+   <div class="enviar-login">
+    <button type="submit">Enviar</button>
+   </div>
+    </form>
+    
+</body>
+</html>
