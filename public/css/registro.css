@@ -341,9 +341,7 @@ input, textarea {
     margin: auto;
 }
 
-.tipousuario{
-    width: 80%;
-}
+.tipousuario{}
 
 
 /* DESKTOP */
@@ -371,7 +369,7 @@ input, textarea {
     background-color: #fff;
     text-align: center;
     width: 20vw;
-    height: 35vh;
+    height: 90%;
 }
 
 
